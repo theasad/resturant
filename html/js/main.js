@@ -6,12 +6,12 @@
 
         $(".embed-responsive iframe").addClass("embed-responsive-item");
         $(".carousel-inner .item:first-child").addClass("active");
-        
+
         $('[data-toggle="tooltip"]').tooltip();
 
 
         // sticky menu
-        
+
         $(".header-area").sticky({topSpacing:0});
 
         //jQuery smooth scroll
@@ -24,20 +24,26 @@
         	event.preventDefault();
         });
 
-        $('body').scrollspy({ 
+        $('body').scrollspy({
             target: '.navbar-collapse' ,
             offset: 76
         });
 
         $('.parallax-bg, .top-area-bg').scrolly({bgParallax: true});
 
+        $(".navbar-toggle").click(function(){
+            $(".mainmenu").addClass('mobile-menu-activated');
+        });
+        $("ul.nav.navbar-nav li a").click(function(){
+            $(".navbar-collapse").removeClass("in");
+        });
     });
 
 
     jQuery(window).load(function(){
 
-        
+
     });
 
 
-}(jQuery));	
+}(jQuery));

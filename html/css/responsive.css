@@ -1,5 +1,5 @@
 /* Medium Layout: 1280px. */
-@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
 	.contact-form {
 	    margin-top: 30px;
 	}
@@ -9,41 +9,133 @@
 }
 
 /* Tablet Layout: 768px. */
-@media only screen and (min-width: 768px) and (max-width: 991px) { 
- 
-    .logo{
-    	text-align: center;
-    }
-    ul.nav.navbar-nav{
-    	font-size: 16px;
-    	text-align: left;
-    }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
 
-	.navbar-collaps{
+	.logo,.author-food-img {
+		text-align: center;
+	}
+
+	ul.nav.navbar-nav {
+		font-size: 16px;
+		text-align: left;
+	}
+
+	.navbar-collaps {
 		padding-right: 0;
 		padding-left: 0;
 	}
+
 	.social-link {
-	    top: 18px;
-	    margin-right: 30px;
-	    top: 39px;
+		top: 18px;
+		margin-right: 30px;
+		top: 39px;
 	}
 
 	.is-sticky .social-link {
-	    top: 30px;
-	    margin-right: 30px;
+		top: 30px;
+		margin-right: 30px;
+	}
+
+	.mainmenu {
+		padding-top: 5px;
+	}
+	.header-text {
+		padding: 110px 0 10px;
+	}
+	.header-text h2{
+		font-size: 3.75em;
+	}
+	.author-food-img img {
+		display: inline-block;
+	}
+	.author-food-img {
+		margin-top: 30px;
+	}
+	.contact-img {
+		display: -webkit-box;
+		margin-bottom: 50px;
+	}
+	footer-area .footer-widget p {
+		font-size: 14px;
+	}
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+	.is-sticky .logo img {
+		height: 85px;
 	}
 	.mainmenu {
-    padding-top: 15px;
-}
+		padding-right: 0;
+		text-align: center;
+		padding-top: 20px;
+	}
+	.navbar-header {
+		position: absolute;
+		right: 0;
+		top: -70px;
+	}
+	.is-sticky .navbar-header {
+		top: -65px;
+	}
 
-/* Mobile Layout: 320px. */
-@media only screen and (max-width: 767px) { 
- 
-    
+	.social-link,
+	.is-sticky .social-link{
+		top: -20px;
+	}
+	.navbar-toggle {
+		float: none;
+		margin: 0;
+		border-color: #fff;
+	}
+	.navbar-toggle .icon-bar {
+		background: #fff;
+	}
+	.mobile-menu-activated ul.nav.navbar-nav {
+		background: #000;
+		text-align: center;
+	}
+
+	.mobile-menu-activated ul.nav.navbar-nav li {
+		display: block;
+	}
+	.mobile-menu-activated ul.nav.navbar-nav li a,
+	.is-sticky .mainmenu ul.nav.navbar-nav li a{
+		padding: 15px;
+		border-bottom: 1px solid #333;
+	}
+	.mainmenu.mobile-menu-activated .navbar-collapse {
+		box-shadow: 0 0 0 0;
+	}
+	.header-text h2{
+		font-size: 35px;
+	}
+	.btn-filled {
+		padding: 17px 33.83px;
+		margin: 0 0.625em;
+		font-size: 14px;
+	}
+
+	.section-padding {
+		padding: 60px 0;
+	}
+	.single-testimonial-item p {
+		font-size: 16px;
+		line-height: 26px;
+		padding: 0 5px;
+	}
+	.contact-img img{
+		margin-bottom: 30px;
+	}
+	.footer-widget {
+		margin-bottom: 50px;
+	}
+
 }
 
 /* Wide Mobile Layout: 480px. */
-@media only screen and (min-width: 480px) and (max-width: 767px) { 
-
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.contact-img .col-sm-6 {
+		width: 50%;
+		float: left;
+	}
 }
